@@ -1,0 +1,60 @@
+{
+    "numOfPlayers": 4,
+    "numOfTeams": 4,
+    "target": 1200,
+    "minimumPlayers": 2,
+    "gameCountdown": 30,
+    "pauseBetweenGames": 10000,
+    "names": ["1", "2", "3", "4"],
+    "url": "race.novisign.com/",
+    "ui": {
+        "FPS": 35,
+        "objects": {
+            "onlineIndicator": {
+                "x": 20,
+                "scale": 0.15,
+                "buffer": 80,
+                "imageSize": 60
+            },
+            "player": {
+                "startX": 120,
+                "startY": 80,
+                "radius": 25,
+                "buffer": 45,
+                "animation": {
+                    "advancePlayer": {
+                        "time": 1,
+                        "xMultiplier": 15
+                    }
+                }
+            },
+            "finishLine": {
+                "x": 1150,
+                "y": 230,
+                "fruit": {
+                    "x": 1170,
+                    "y": 200,
+                    "buffer": 80
+                }
+            },
+            "mil": {
+                "x": 420,
+                "y": 40
+            },
+            "flags": {
+                "x": 35,
+                "y": 180,
+                "margin": 90
+            },
+            "nameHolder": {
+                "x": 10,
+                "y": 255,
+                "margin": 90
+            },
+            "flach": {
+                "x": 450,
+                "y": 170
+            }
+        }
+    }
+}

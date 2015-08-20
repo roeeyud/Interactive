@@ -1,0 +1,14 @@
+<div ng-hide="preloadReady">Loading</div>
+<div ng-show="preloadReady">
+    <div class="heading">Preview</div>
+    <div class="say-box"></div>
+    <div class="heading">Choose background</div>
+    <div class="flexslider">
+        <ul class="slides">
+            <li ng-repeat="imageSrc in images" class="slid-container">
+                <img ng-src="{{imageSrc}}" ng-click="applyBack(imageSrc)"/>
+            </li>
+        </ul>
+    </div>
+    <button ng-click="goTo('enter-text')">NEXT></button>
+</div>

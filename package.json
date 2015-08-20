@@ -1,0 +1,43 @@
+{
+  "name": "novisign-interactive",
+  "version": "1.0.1",
+  "private": true,
+  "dependencies": {
+    "browserify-middleware": "3.0.x",
+    "bunyan": "^1.3.4",
+    "crossdomain": "0.0.1",
+    "decompress": "^2.2.1",
+    "ejs": "1.0.x",
+    "eventemitter": "0.3.x",
+    "express": "4.4.x",
+    "express-busboy": "2.4.x",
+    "fs-extra": "^0.18.0",
+    "http-browserify": "^1.7.0",
+    "mongodb": "^1.4.37",
+    "mongoskin": "^1.4.13",
+    "morgan": "1.5.x",
+    "node.extend": "1.0.x",
+    "socket.io": "1.0.x",
+    "socket.io-client": "1.0.6",
+    "tmp": "0.0.25",
+    "yaqrcode": "^0.2.1"
+  },
+  "subdomain": "novi-game",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "log": {
+    "level": "debug"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-mkdir": "^0.1.2"
+  }
+}

@@ -1,0 +1,15 @@
+<div>
+    <div class="la-ball-running-dots la-dark la" ng-if="!row.rowReady">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div ng-if="row.rowReady" class="expanded-grid" ui-grid-auto-resize ui-grid="row.entity.subGridOptions" ui-grid-resize-columns style=""></div>
+    <div ng-if="row.rowReady" class="summery">
+        <h2>Summery</h2>
+        <div class="summery-element">Total num of users: {{row._mySummery.numOfUsers}}</div>
+    </div>
+    <svg class="visualisation" width="800" height="200"></svg>
+</div>

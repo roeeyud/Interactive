@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="statsApp">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/ball-loader.css">
+        <link rel="stylesheet" type="text/css" href="/css/stats.css">
+        <link rel="stylesheet" type="text/css" href="/css/ui-grid.css">
+        <link rel="stylesheet" type="text/css" href="/css/angular-chart.css">
+        <script src="/lib/jquery.2.1.1.js"></script>
+        <script src="/lib/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+        <script src="/lib/ui-grid.min.js"></script>
+        <script src="/lib/angular-resource.min.js"></script>
+        <script src="/stats.js"></script>
+    </head>
+    <body>
+        <div ng-controller="statsCtrl">
+            <div class="la-ball-running-dots la-dark la la-2x" ng-if="screenSessions === undefined || !screenSessions.$resolved">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div ui-grid="gridOptions" ui-grid-pagination ui-grid-expandable ui-grid-resize-columns class="myGrid" ng-if="screenSessions !== undefined && screenSessions.$resolved"></div>
+        </div>
+    </body>
+</html>

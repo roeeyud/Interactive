@@ -1,0 +1,80 @@
+{
+  "name": "Race",
+  "version": "1.0.3",
+  "iconUrl100x100": "files/app-icon-100x100.png",
+  "staticPreviewUrl": "files/static-preview.png",
+  "defaultWidth": 1280,
+  "defaultHeight": 575,
+  "lockSize": true,
+  "options": [
+    {
+      "key": "tag",
+      "title": "Tag",
+      "description": "",
+      "type": "string",
+      "default": "default"
+    },
+    {
+      "description": "Minimum number of active players/teams",
+      "title": "Minimum players",
+      "key": "minPlayer",
+      "type": "number",
+      "min": 2,
+      "max": 4,
+      "default": 2
+    },
+    {
+      "description": "Interval in seconds between games",
+      "title": "Interval between games",
+      "key": "pause",
+      "type": "number",
+      "min": 0,
+      "default": 5
+    },
+    {
+      "key": "countdown",
+      "description": "Countdown (in seconds) before game starts",
+      "title": "Countdown (seconds)",
+      "type": "number",
+      "min": 0,
+      "default": 30
+    },
+    {
+      "key": "speed",
+      "title": "Speed",
+      "description": "Speed of game",
+      "type": "number",
+      "min": 1,
+      "default": 15
+    },
+    {
+      "key": "names",
+      "title": "Player names",
+      "description": "Descriptions for characters (separated by ',')",
+      "type": "string",
+      "default": "Player 1 , Player 2,Player 3,Player 4"
+    },
+    {
+      "description": "Time in seconds between demo run, zero to disable",
+      "title": "Interval between demos",
+      "type": "number",
+      "key": "demoLoopInterval",
+      "default": 30
+    },
+    {
+      "description": "Time in seconds before game times out",
+      "title": "Game timeout",
+      "type": "number",
+      "key": "gameTimeout",
+      "default": "180"
+    },
+    {
+      "description": "Select if QR code will be shown on screen",
+      "title": "Show QR code",
+      "type": "boolean",
+      "key": "showQr",
+      "default": false
+    }
+  ]
+
+}

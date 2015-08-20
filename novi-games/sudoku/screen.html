@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="noviSudokuScreen">
+<head>
+    <link rel="stylesheet" type="text/css" href="files/css/screen.css">
+    <script src="files/common/jquery.2.1.1.js"></script>
+    <script src="files/common/angular.min.js"></script>
+    <script src="files/common/qrcode.js"></script>
+    <script src="files/common/create.js"></script>
+    <script src="/novi-connect.io/novi-connect.io.js"></script>
+    <script src="screen.js"></script>
+</head>
+<body >
+    <div ng-controller="noviSudokuCtrl" class="sudoku-screen" ng-show="connectReady">
+        <div class="game-info">
+            <div class="player-status">
+                <div class="status-item" ng-repeat="player in onlineUsers" >
+                    <div class="player-progress" ng-style="{'background-color': player.color, width: player.gameProgress + '%'}">
+                        <span class="player-name">{{player.name}}</span>
+                    </div>
+                    <span class="player-name" ng-if="gameState === gameStates.WAITING || player.online">{{player.name}}</span>
+                </div>
+            </div>
+            <div class="connect-info">
+                <div class="count-down-board">
+                    <div ng-if="connectMessage.length > 0">
+                        Connect To:<br>
+                        <span style="font-size: 18px">{{connectUrl}}</span><br>
+                        And enter
+                        {{connectMessage}} <br>
+                        To Play!
+                    </div>
+                    <br>
+                    {{countDownMessage}}
+                </div>
+                <img class="qr-image" ng-if="qrImg" ng-src="{{qrImg}}">
+            </div>
+        </div>
+        <div class="game-area" >
+            <div class="sudoku-table" sudoku-engine="sudokuEngine" role="'screen'" player-progress="playerProgress"></div>
+        </div>
+
+    </div>
+</body>
+</html>
+

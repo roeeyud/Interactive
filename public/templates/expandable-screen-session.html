@@ -1,0 +1,7 @@
+<ul class="tabs">
+    <li ng-repeat="tab in row._tabs" ng-class="{active: $index === row._curId} " ng-click="row._curId = $index">{{tab.title}}</li>
+</ul>
+<div class="tab-view">
+    <div ng-if="row._curId === 0" class="user-records-stats"></div>
+    <div ng-if="row._curId === 1" class="screen-messages-stats"></div>
+</div>

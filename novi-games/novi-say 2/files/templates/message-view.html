@@ -1,0 +1,26 @@
+<div>
+    <div class="large-message">
+        <img ng-src="{{messageQueue[pointer].img}}">
+        <div class="message-text">
+            {{messageQueue[pointer].text}}
+        </div>
+    </div>
+    <div>
+        <img ng-if="messageQueue[getPointer(pointer, -3)] !== undefined" ng-src="{{messageQueue[getPointer(pointer, -3)].img}}" class="preview-message message-0">
+        <img ng-if="messageQueue[getPointer(pointer, -2)] !== undefined" ng-src="{{messageQueue[getPointer(pointer, -2)].img}}" class="preview-message message-1">
+        <img ng-if="messageQueue[getPointer(pointer, -1)] !== undefined" ng-src="{{messageQueue[getPointer(pointer, -1)].img}}" class="preview-message message-2">
+        <img ng-if="messageQueue[pointer] !== undefined" ng-src="{{messageQueue[pointer].img}}" class="preview-message message-3">
+        <div class="white-cover preview-message message-3"></div>
+        <img ng-if="messageQueue[getPointer(pointer, 1)] !== undefined" ng-src="{{messageQueue[getPointer(pointer, 1)].img}}" class="preview-message message-4">
+        <img ng-if="messageQueue[getPointer(pointer, 2)] !== undefined" ng-src="{{messageQueue[getPointer(pointer, 2)].img}}" class="preview-message message-5">
+        <img ng-if="messageQueue[getPointer(pointer, 3)] !== undefined" ng-src="{{messageQueue[getPointer(pointer, 3)].img}}" class="preview-message message-6">
+    </div>
+    <span class="lets-play-message">LETS PLAY NOVISAY!</span>
+    <div class="info-message">
+        <span>Go To</span><br>
+        <span>bit.ly/1gJJq4j</span><br>
+        <span>And Enter:</span><br>
+        <span>{{connect.sessionId}}</span><br>
+        <span>To share your photos!</span>
+    </div>
+</div>

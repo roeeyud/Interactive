@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="noviSayAudit">
+<head>
+    <link rel="stylesheet" type="text/css" href="files/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="files/css/user.css">
+    <link rel="stylesheet" type="text/css" href="files/css/audit.css">
+    <link rel="stylesheet" type="text/css" href="files/css/say-box.css">
+    <script src="files/common/jquery.2.1.1.js"></script>
+    <script src="files/common/angular.min.js"></script>
+    <script src="files/common/create.js"></script>
+    <script src="/novi-connect.io/novi-connect.io.js"></script>
+    <script src="audit.js"></script>
+</head>
+<body >
+<div ng-controller="noviSayAuditCtrl">
+    <div ng-if="!preloadReady" class="loading-section">
+        Loading
+        <div class="loading-box outer" >
+            <div class="loading-box loading-completed" style="width:{{preloadProgress}}%;" >
+            </div>
+        </div>
+    </div>
+    <div ng-if="preloadReady && connectReady">
+        <h1 class="loading-section" ng-if="!message">Waiting for message to audit</h1>
+        <div ng-if="message" class="say-box"></div>
+        <div ng-if="message" class="button-footer">
+            <div class="audit-button reject" ng-click="respondToAudit(false)"></div>
+            <div class="audit-button approve" ng-click="respondToAudit(true)"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

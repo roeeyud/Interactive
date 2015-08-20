@@ -1,0 +1,114 @@
+.sudoku-button:focus {
+    outline: 0;
+}
+
+.button-container {
+    margin: 18px 7px;
+}
+
+.game-area {
+    height: 604px;
+    width: 604px;
+    display: block;
+}
+
+td.sudoku-cell span {
+    color: black;
+}
+
+.ask-name {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-top: 101px;
+    font-family: fantasy;
+    font-size: 35px;
+}
+
+.ask-name input {
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 10px;
+    border: 3px solid #555555;
+    width: 300px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.ask-name button, .popup button {
+    font-size: 45px;
+    border: none;
+    background: green;
+    color: white;
+    padding: 17px;
+    text-transform: uppercase;
+    border-radius: 13px;
+    margin-top: 142px;
+}
+
+.waiting-for-others {
+    color: white;
+    font-size: 35px;
+    padding-top: 250px;
+    text-align: center;
+}
+
+.popup {
+    transform: translate(3em,0);
+    -webkit-transform: translate(3em,0);
+    -moz-transform: translate(3em,0);
+
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+
+    background-color: whitesmoke;
+    height: 300px;
+    width: 300px;
+    z-index: 50;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    padding: 15px;
+    text-align: center;
+}
+
+.popup.show-me {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+body {
+    padding: 15px;
+}
+
+.sudoku-button {
+    font-family: Arial;
+    display: inline-block;
+    font-weight: 700;
+    background-color: white;
+    font-size: 6vw;
+    width: 9.2vw;
+    height: 9.2vw;
+    text-align: center;
+    line-height: 51px;
+}
+
+.sudoku-button.clear-key {
+    display: block;
+    margin-left: 160px;
+    margin-top: 18px;
+    width: 169px;
+    font-size: 25px;
+    background-color: #000;
+    color: white;
+}

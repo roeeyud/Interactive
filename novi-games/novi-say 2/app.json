@@ -1,0 +1,49 @@
+{
+  "name": "Say",
+  "version": "0.1.0",
+  "iconUrl100x100": "files/app-icon-100x100.png",
+  "staticPreviewUrl": "files/static-preview.png",
+  "defaultWidth": 1280,
+  "defaultHeight": 720,
+  "userOptions": [
+    {
+      "description": "Size of compressed upload the bigger it is, the better quality image user can upload and the slower it will take to upload (adapt to local networking)",
+      "key": "maxUploadSize",
+      "type": "number",
+      "default": 551
+    }
+  ],
+  "options": [
+    {
+      "description": "Use audit",
+      "title": "Audit",
+      "key": "useAudit",
+      "type": "boolean",
+      "default": false,
+      "hidden": true
+    },
+    {
+      "description": "Show connect QR code",
+      "title": "Show QR",
+      "key": "showQR",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "description": "Maximum number of messages",
+      "title": "Minimum messages",
+      "key": "maxMessages",
+      "type": "number",
+      "min": 1,
+      "default": 5
+    },
+    {
+      "description": "Time in seconds between switching messages.",
+      "title": "Switch interval",
+      "key": "interval",
+      "type": "number",
+      "min": 1,
+      "default": 3
+    }
+  ]
+}

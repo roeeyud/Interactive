@@ -1,0 +1,20 @@
+.audit-button {
+    width: 50%;
+    height: 150px;
+    float: left;
+
+}
+
+.button-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.audit-button.reject {
+    background-color: red;
+}
+
+.audit-button.approve {
+    background-color: green;
+}

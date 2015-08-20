@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="noviSayScreen">
+<head>
+    <link rel="stylesheet" type="text/css" href="files/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="files/css/say-box.css">
+    <script src="files/common/jquery.2.1.1.js"></script>
+    <script src="files/common/jquery-ui.min.js"></script>
+    <script src="files/common/jquery.marquee.js"></script>
+    <script src="files/common/angular.min.js"></script>
+    <script src="files/common/create.js"></script>
+    <script src="files/common/qrcode.js"></script>
+    <script src="/novi-connect.io/novi-connect.io.js"></script>
+    <script src="screen.js"></script>
+</head>
+<body >
+    <div class="session-id-header"></div>
+    <div ng-controller="noviSayCtrl">
+        <div ng-if="!preloadReady" class="loading-section">
+            Loading
+            <div class="loading-box outer" >
+                <div class="loading-box loading-completed" style="width:{{preloadProgress}}%;" >
+                </div>
+            </div>
+        </div>
+        <div class="message-view" ng-show="preloadReady"></div>
+    </div>
+</body>
+</html>
+

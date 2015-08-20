@@ -1,0 +1,13 @@
+<div ng-hide="message.qRLink !== null" class="message-container" style="{{containerStyle}}">
+    <div class="box-message" style="{{boxStyle}}">
+        <div class="marquee" style="{{marqueeStyle}}"><span></span></div>
+        <img>
+    </div>
+</div>
+<div ng-hide="message.qRLink !== null" class="message-container" style="{{containerStyle}}">
+    <div class="box-message" style="{{boxStyle}}">
+        <div class="marquee" style="{{marqueeStyle}}"><span></span></div>
+        <img>
+    </div>
+</div>
+<qrcode ng-show="message.qRLink !== null" version="6" data="{{message.qRLink}}" size = "{{config.boxSize}}"></qrcode>

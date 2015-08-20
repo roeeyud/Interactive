@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="noviSayUser">
+<head>
+    <link rel="stylesheet" type="text/css" href="files/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="files/css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="files/css/user.css">
+    <link rel="stylesheet" type="text/css" href="files/css/say-box.css">
+
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+
+    <script src="files/common/jquery.2.1.1.js"></script>
+    <script src="files/common/viewporter.js"></script>
+    <script src="files/common/jquery-ui.min.js"></script>
+    <script src="files/common/jquery.flexslider.js"></script>
+    <script src="files/common/jquery.marquee.js"></script>
+    <script src="files/common/angular.min.js"></script>
+    <script src="files/common/angular-route.js"></script>
+    <script src="files/common/fabric.js"></script>
+    <script src="files/common/create.js"></script>
+    <script src="/novi-connect.io/novi-connect.io.js"></script>
+    <script src="user.js"></script>
+</head>
+<body>
+<div id="viewporter">
+    <div ng-controller="noviSayUserCtrl" class="say-user">
+        <div ng-if="!preloadReady" class="loading-section">
+            Loading
+            <div class="loading-box outer" >
+                <div class="loading-box loading-completed" style="width:{{preloadProgress}}%;" >
+                </div>
+            </div>
+        </div>
+        <ng-view ng-show="preloadReady && connectReady && !hideAll"></ng-view>
+    </div>
+    <img class="corner-logo" src="files/images/interactive-logo.png">
+</div>
+</body>
+</html>
+

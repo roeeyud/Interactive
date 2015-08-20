@@ -1,0 +1,41 @@
+{
+  "name": "Sudoku",
+  "version": "0.0.0",
+  "iconUrl100x100": "files/app-icon-100x100.png",
+  "staticPreviewUrl": "files/static-preview.png",
+  "defaultWidth": 900,
+  "defaultHeight": 600,
+  "options": [
+    {
+      "key": "superEasy",
+      "title": "Fast match",
+      "description": "Fast match (easier puzzle)",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "key": "countdown",
+      "title": "Countdown",
+      "description": "Countdown (in seconds) before game starts",
+      "type": "number",
+      "min": 0,
+      "default": 15
+    },
+    {
+      "key": "maxPlayer",
+      "title": "Maximum players",
+      "description": "Maximum amount of players",
+      "type": "number",
+      "min": 1,
+      "default": 4
+    },
+    {
+      "description": "Minimum number of active players",
+      "title": "Minimum players",
+      "key": "minPlayer",
+      "type": "number",
+      "min": 1,
+      "default": 2
+    }
+  ]
+}

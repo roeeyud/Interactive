@@ -1,0 +1,27 @@
+{
+  "name": "simple-app",
+  "version": "1.0.0",
+  "iconUrl100x100": "files/app-icon.png",
+  "options": [
+    {
+      "description": "Master",
+      "key": "master",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "description": "Header message",
+      "key": "headerMsg",
+      "type": "string",
+      "default": "Welcome to simple app!"
+    },
+    {
+      "description": "Font size",
+      "key": "fontSize",
+      "type": "number",
+      "min": 20,
+      "max": 80,
+      "default": 30
+    }
+  ]
+}

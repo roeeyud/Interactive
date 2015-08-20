@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="noviSudokuUser">
+<head>
+    <link rel="stylesheet" type="text/css" href="files/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="files/css/user.css">
+
+    <meta name="viewport" content="initial-scale=0.65,maximum-scale=1.0" />
+
+    <script src="files/common/jquery.2.1.1.js"></script>
+    <script src="files/common/viewporter.js"></script>
+    <script src="files/common/angular.min.js"></script>
+    <script src="/novi-connect.io/novi-connect.io.js"></script>
+    <script src="user.js"></script>
+</head>
+<body>
+<div id="viewporter">
+    <div ng-controller="noviSayUserCtrl" class="sudoku-user">
+        <div class="popup">
+            <span style="display: block;"></span>
+            <button>OK</button>
+        </div>
+        <label ng-if="askName" class="ask-name" >
+            Please enter your name<br>
+            <input type="text" ng-model="userName">
+            <button ng-click="submitName(userName)">Submit</button>
+        </label>
+        <div class="sudoku-table" sudoku-engine="sudokuEngine" update-screen="updateScreen" role="'user'" ng-if="showBoard"></div>
+        <div class="waiting-for-others">{{userMessage}}</div>
+
+    </div>
+
+</div>
+</body>
+</html>
+

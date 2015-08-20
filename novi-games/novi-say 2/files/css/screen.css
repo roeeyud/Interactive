@@ -1,0 +1,147 @@
+body {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.large-message {
+    width: 551px;
+    height: 551px;
+    top: 21px;
+    left: 657px;
+    position: absolute;
+}
+
+.large-message img {
+    width: 100%;
+    height: 100%;
+}
+
+.large-message div {
+    position: absolute;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 525px;
+    height: 58px;
+
+    bottom: 0px;
+    margin: 13px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 33.16px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+}
+
+.preview-message {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    position: absolute;
+}
+
+.preview-message.message-6 {
+    width: 39px;
+    height: 38px;
+    top: 626px;
+    left: 1149px;
+}
+
+.preview-message.message-5 {
+    top: 615px;
+    left: 1086px;
+    width: 62px;
+    height: 62px;
+}
+
+.preview-message.message-4 {
+    width: 83px;
+    height: 82px;
+    top: 604px;
+    left: 994px;
+}
+
+.white-cover.preview-message.message-3 {
+    background-color: white;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.preview-message.message-3 {
+    width: 103px;
+    height: 102px;
+    top: 594px;
+    left: 875px;
+}
+
+.preview-message.message-2 {
+    width: 82px;
+    height: 82px;
+    top: 604px;
+    left: 779px;
+}
+
+span.lets-play-message {
+    font-family: Arial;
+    color: #f08321;
+    font-size: 44.01px;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+    line-height: 23px;
+    text-align: left;
+    top: 186px;
+    left: 117px;
+    position: absolute;
+}
+
+.info-message {
+    position: absolute;
+    font-family: Arial;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    top: 267px;
+    left: 151px;
+    width: 418px;
+    height: 178px;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.preview-message.message-1 {
+    width: 61px;
+    height: 62px;
+    top: 614px;
+    left: 707px;
+}
+
+.preview-message.message-0 {
+    width: 35px;
+    height: 36px;
+    top: 627px;
+    left: 671px;
+}
+
+.loading-section {
+    padding: 25%;
+    text-align: center;
+}
+
+.loading-box {
+    height: 30px;
+    width: 100%;
+}
+
+.loading-box.outer {
+    margin-top: 20px;
+    border: #333 3px solid;
+}
+
+.loading-completed {
+    overflow: hidden;
+    background-color: green;
+}
+

@@ -1,0 +1,139 @@
+body {
+    background-color: #bdbdbd;
+    font-family: fantasy;
+    color: #333333;
+}
+
+.app-section {
+    box-sizing: border-box;
+    margin: 25px;
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.extra-links, .store-container {
+    float: left;
+}
+
+div.store-view {
+
+}
+
+qrcode {
+    display: block;
+    margin: 15px;
+}
+div.app-small-view {
+    padding: 5px;
+    width: 120px;
+    height: 120px;
+    border: 2px transparent solid;
+    display: inline-block;
+}
+
+div.app-small-view:hover {
+    border-color: #bdbdbd;
+    border-radius: 5px;
+}
+
+div.app-small-view:focus {
+    border-color: #bdbdbd;
+    border-radius: 5px;
+    outline: none;
+}
+
+div.store-view:hover {
+    border-color: rgb(96, 96, 96);
+}
+
+.app-small-view span.app-name {
+    display: block;
+    text-align: center;
+
+}
+
+img.app-small-icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #bdbdbd;
+    border-radius: 15px;
+}
+
+.app-small-view .app-small-icon {
+    margin-left: 10px;
+}
+
+.dropzone {
+    height: auto;
+}
+
+
+.app-info {
+    height: auto;
+    width: 700px;
+    padding: 20px;
+}
+
+.pop-in-animation {
+    transform: translate(3em,0);
+    -webkit-transform: translate(3em,0);
+    -moz-transform: translate(3em,0);
+
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+}
+
+.show-me {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+}
+
+.app-option {
+    margin: 5px;
+}
+
+.app-option .option-description {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.app-option input {
+
+}
+
+.container {
+    max-height: 300px;
+    width: 600px;
+    overflow: auto;
+    border: 2px #8c8c8c solid;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+button.delete-app-button {
+    border: 0;
+    font-family: fantasy;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 17px;
+    height: 44px;
+    font-size: 27px;
+    outline: 0;
+}
+
+button.delete-app-button:hover {
+    transition: all 0.1s ease-in;
+    background-color: #c63900;
+    color: #ffffff;
+}

@@ -1,0 +1,11 @@
+<div class="pop-in-animation" ng-switch="option.type" ng-class="{'show-me': showMe}">
+    <span class="option-description">{{option.description}}</span>
+    <input type="number" ng-switch-when="number" ng-model="option.val">
+    <input type="time" ng-switch-when="time" ng-model="option.val">
+    <input type="date" ng-switch-when="date" ng-model="option.val">
+    <input type="text" ng-switch-when="string" ng-model="option.val">
+    <input type="checkbox" ng-switch-when="boolean" ng-model="option.val">
+    <span ng-switch-default>XXXXXXX</span>
+</div>
+
+

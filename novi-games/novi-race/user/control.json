@@ -1,0 +1,29 @@
+{
+    "target": 10,
+    "ui": {
+        "FPS": 20,
+        "objects": {
+            "button": {
+                "radius": 80,
+                "marginY": 50,
+                "marginX": 300,
+                "x": 50
+            },
+            "board": {
+                "x": 100,
+                "y": 250
+            },
+            "coundown": {
+                "x": 220,
+                "y": 0
+            },
+            "character": {
+                "x": 215,
+                "y": 100,
+                "scaleY": 0.8,
+                "scaleX": 0.8
+            }
+        }
+    },
+    "colors": ["red", "purple", "blue", "green",  "#990099", "FF9900"]
+}

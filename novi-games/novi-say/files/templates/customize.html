@@ -1,0 +1,13 @@
+<img class="user-progress" ng-src="{{'files/images/prog_2.png'}}">
+<canvas id="imagePreview"></canvas>
+<div ng-hide="true">
+    <img ng-src="{{message.back}}" id="back-image">
+</div>
+<div class="image-selection-container">
+    <div class="image-selection">
+        <img ng-repeat="image in images track by $index" class="image-for-selection" ng-click="onChooseImage(image)" ng-src="{{image}}">
+    </div>
+</div>
+<button class="next-button" ng-click="moveToAddText()">
+    Next
+</button>

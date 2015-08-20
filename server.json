@@ -1,0 +1,10 @@
+{
+    "debug": true,
+    "serverRootPath": "./novi-server-files/",
+    "appDir": "apps/",
+    "uploadDir": "/uploads/tmp-files",
+    "decompressTmpDir": "decompress/tmp-folders",
+    "port": 3001,
+    "dbName": "mongodb://@localhost:27017/test",
+    "browserify": true
+}

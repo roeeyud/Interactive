@@ -1,0 +1,11 @@
+<img class="user-progress" ng-src="{{'files/images/prog_1.png'}}">
+<h1>WELCOME</h1>
+<h2>Customise your photos</h2>
+<h2>and share with your friends</h2>
+<button style="display: block" type="button" ng-click="chooseFile();" class="upload-button">Take a Photo!</button>
+<form enctype="multipart/form-data">
+    <div style="height:0px;overflow:hidden">
+        <input type="file" accept="image/*" id="fileInput" name="fileInput" ng-model="imageXXX"/>
+    </div>
+</form>
+<div style="display: none" id="preview"></div>

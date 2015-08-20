@@ -1,0 +1,251 @@
+body {
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+
+canvas {
+    z-index: 0;
+}
+
+.say-box {
+    position: relative;
+    margin-left: 22.5%;
+    margin-bottom: 2%;
+}
+
+h1 {
+    color: #f08221;
+    text-align: center;
+    margin-top: 25vh;
+    font-size: 6vw;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 3vh;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#imagePreview {
+    margin-top: 1vh;
+}
+input {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 2%;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    height: 12%;
+    border: 0;
+    outline: 0;
+    border-radius: 2.5vw;
+}
+
+
+.next-button {
+    height: 8.3vh;
+    color: white;
+    border-radius: 2vw;
+    border: none;
+    font-size: 3vh;
+    outline: 0;
+    text-align: center;
+    width: 50vw;
+    margin-left: 25vw;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f19745+0,f19745+50,f08321+50,f08321+100 */
+    background: #f19745; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f19745 0%, #f19745 50%, #f08321 50%, #f08321 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f19745), color-stop(50%,#f19745), color-stop(50%,#f08321), color-stop(100%,#f08321)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f19745 0%,#f19745 50%,#f08321 50%,#f08321 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f19745 0%,#f19745 50%,#f08321 50%,#f08321 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f19745 0%,#f19745 50%,#f08321 50%,#f08321 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f19745 0%,#f19745 50%,#f08321 50%,#f08321 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f19745', endColorstr='#f08321',GradientType=0 ); /* IE6-9 */
+}
+
+.message-container, .box-message {
+    position: relative;
+}
+
+input {
+    display: block;
+}
+
+.select-img-area {
+    overflow-x: scroll;
+    width: 200px;
+
+}
+
+.select-img-area canvas {
+    display: inline-block;
+}
+
+.flexslider {
+    width: 100%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+
+}
+
+li.slid-container{
+    border: 5px #ccccc3 solid;
+    border-radius: 3px;
+    margin-right: 1px;
+}
+
+li.slid-container:hover {
+    cursor: pointer;
+}
+
+.say-user {
+
+}
+
+.method-button {
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+    border: 3px #333 solid;
+    margin-bottom: 20px;
+    background-color: #93C47D;
+}
+
+.method-button:hover {
+    cursor: pointer;
+    background-color: #93C47D;
+}
+
+.text-input {
+    box-sizing: border-box;
+}
+
+.upload-button {
+    margin-top: 4vh;
+    width: 52vw;
+    margin-left: 24vw;
+    text-align: right;
+    padding-right: 6vw;
+    background: transparent;
+    background-image: url('../images/upload-image-back.png');
+    background-size: 100% 100%;
+    border: none;
+    color: white;
+    height: 7vh;
+    font-size: 2.5vh;
+}
+
+.draw-canvas {
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+}
+
+.image-selection .image-for-selection{
+    height: 100%;
+    float: left;
+}
+
+.image-selection-container {
+    padding-left: 9vw;
+    width: 82vw;
+    overflow-x: scroll;
+}
+
+.image-selection {
+    height: 11vh;
+    position: relative;
+    margin-top: 5vh;
+    width: 150vw;
+}
+
+
+button.next-button.send-button {
+    width: 50vw;
+}
+
+button.next-button {
+    position: absolute;
+    bottom: 4vh;
+    width: 34vw;
+    margin-left: 35vw;
+}
+
+.text-position {
+    top: 20%;
+    position: absolute;
+    width: 70vw;
+    left: 15vw;
+    height: 6%;
+}
+
+.text-background {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.text.text-position {
+    color: white;
+    font-size: 110%;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img.user-progress {
+    width: 92vw;
+    margin-left: 4vw;
+    margin-top: 2%;
+}
+
+img.corner-logo {
+    width: 20vw;
+    margin-left: 5vw;
+    bottom: 3vh;
+    position: absolute;
+}
+
+img.arrow.left {
+    margin-right: 4vw;
+    left: 3vw;
+}
+
+img.arrow.right {
+    margin-left: 4vw;
+    left: 88vw;
+}
+
+img.arrow {
+    height: 42%;
+    position: absolute;
+    bottom: 3vh;
+}
+
+.image-preview {
+    margin-top: 2vh;
+}
+
+h1.thank-you {
+    font-size: 14vw;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
+
+img.thank-you-logo {
+    margin-top: 5vh;
+    width: 80vw;
+    margin-left: 10vw;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="adminApp">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/upload-game.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin.css">
+    <script src="/lib/jquery.2.1.1.js"></script>
+    <script src="/lib/angular.min.js"></script>
+    <script src="/lib/angular-resource.min.js"></script>
+    <script src="/lib/dropzone.js"></script>
+    <script src="/admin.js"></script>
+</head>
+<body>
+
+    <div>
+        <div ng-controller="adminCtrl">
+            <div class="store-container">
+                <form action="/store/upload" class="app-section dropzone app-store-drop">
+                    <div class="fallback">
+                        <input name="file" type="file" multiple />
+                    </div>
+                </form>
+                <div class="app-section store-view"></div>
+                <div class="app-section pop-in-animation app-info"></div>
+            </div>
+            <div class="extra-links">
+                <h2>User:</h2>
+                <a ng-href="{{userLink}}">{{userLink}}</a>
+                <qrcode version="6" data="{{userLink}}" size="150" download></qrcode>
+                <h2>Audit:</h2>
+                <a ng-href="{{auditLink}}">{{auditLink}}</a>
+                <qrcode ng-if="auditLink" version="6" data="{{auditLink}}" size="150" download></qrcode>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

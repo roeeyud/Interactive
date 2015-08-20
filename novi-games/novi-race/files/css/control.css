@@ -1,0 +1,33 @@
+body {
+    background-image: url('../images/controler/background.png');
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+}
+
+canvas {
+    z-index: 0;
+}
+
+.name-form {
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    width: 349px;
+    height: 151px;
+    background-repeat: no-repeat;
+    display: none;
+    z-index: 999;
+    background-image: url('../images/controler/box.png');
+    padding-top: 80px;
+    padding-left: 80px;
+}
+
+.name-form input {
+    display: block;
+    width: 270px;
+    margin-bottom: 50px;
+}
+
+.name-form button {
+    margin-left: 104px;
+}

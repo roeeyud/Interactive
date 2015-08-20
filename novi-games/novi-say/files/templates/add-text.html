@@ -1,0 +1,9 @@
+<img class="user-progress" ng-src="{{'files/images/prog_3.png'}}">
+<input type="text" ng-model="renderedImage.text">
+<div class="image-preview">
+    <img ng-src="{{renderedImage.img}}">
+    <div class="text-position text text-background" ng-if="renderedImage.text.length > 0">{{renderedImage.text}}</div>
+</div>
+<button class="next-button send-button" ng-click="sendImage()">
+    Approve & Send
+</button>

@@ -1,0 +1,19 @@
+<div ng-class="{'show-me': curAppInView !== undefined}">
+    <div class="app-property">
+        Name: <span>{{curAppInView.name}}</span>
+    </div>
+    <div class="app-property">
+        Version: <span>{{curAppInView.version}}</span>
+    </div>
+    <h1>App options</h1>
+    <div class="options-container container">
+        <div ng-repeat="option in curAppInView.options" class="app-option form-style-2"></div>
+    </div>
+    <h1>Links:</h1>
+    <div class="links-container container pop-in-animation show-me">
+        <h2>Screen:</h2>
+        <a ng-href="{{screenLink}}">{{screenLink}}</a>
+        <qrcode version="10" data="{{screenLink}}" size = "150" download></qrcode>
+    </div>
+    <button class="delete-app-button" ng-click="deleteApp(curAppInView.name)">DELETE APP</button>
+</div>

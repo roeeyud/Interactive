@@ -15,7 +15,7 @@
     "http-browserify": "^1.7.0",
     "mongodb": "^1.4.37",
     "mongoskin": "^1.4.13",
-    "morgan": "1.5.x",
+    "morgan": "1.9.x",
     "node.extend": ">=1.1.7",
     "socket.io": "1.0.x",
     "socket.io-client": "1.0.6",

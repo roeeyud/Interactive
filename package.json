@@ -13,7 +13,7 @@
     "express-busboy": "2.4.x",
     "fs-extra": "^0.18.0",
     "http-browserify": "^1.7.0",
-    "mongodb": "^1.4.37",
+    "mongodb": "^3.1.13",
     "mongoskin": "^1.4.13",
     "morgan": "1.9.x",
     "node.extend": ">=1.1.7",

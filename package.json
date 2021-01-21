@@ -17,7 +17,7 @@
     "mongoskin": "^1.4.13",
     "morgan": "1.9.x",
     "node.extend": ">=1.1.7",
-    "socket.io": "1.0.x",
+    "socket.io": "2.4.x",
     "socket.io-client": "1.0.6",
     "tmp": "0.0.25",
     "yaqrcode": "^0.2.1"
